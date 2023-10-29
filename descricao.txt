@@ -1,0 +1,42 @@
+Vou explicar sistematicamente como o comando `alert` em JavaScript funciona para exibir uma caixa de diálogo com uma mensagem específica em uma página da web. O comando `alert` é uma função embutida em JavaScript que é usada para exibir mensagens de aviso ou informações importantes para o usuário. Aqui está uma explicação passo a passo:
+
+1. **HTML Básico**: Você precisa de um arquivo HTML básico para criar a estrutura da sua página da web. Crie um arquivo HTML, como "index.html", e dentro dele, você deve ter o seguinte código:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo de Alerta em JavaScript</title>
+</head>
+<body>
+    <!-- O conteúdo da página vai aqui -->
+    <script src="seu_script.js"></script>
+</body>
+</html>
+```
+
+2. **Incluindo JavaScript**: Observe a tag `<script>` no código HTML acima. Ela inclui um arquivo JavaScript externo chamado "seu_script.js". Você pode criar esse arquivo JavaScript para adicionar o código que usará o comando `alert`. Isso permite manter o HTML e o JavaScript separados.
+
+3. **Criando a função com `alert`**: No arquivo "seu_script.js", você pode adicionar o código JavaScript para exibir um alerta. Por exemplo:
+
+```javascript
+function exibirAlerta() {
+    alert("Esta é uma mensagem de alerta!");
+}
+```
+
+Este código define uma função chamada `exibirAlerta`. Quando chamada, essa função exibirá uma caixa de diálogo com a mensagem "Esta é uma mensagem de alerta!".
+
+4. **Chamando a função**: Agora, você pode chamar a função `exibirAlerta` em resposta a um evento ou simplesmente chamá-la quando a página for carregada. Por exemplo, você pode chamar a função na carga da página, adicionando o seguinte ao seu arquivo "seu_script.js":
+
+```javascript
+window.onload = function() {
+    exibirAlerta();
+}
+```
+
+Isso garante que o alerta seja exibido assim que a página for carregada.
+
+5. **Visualizando a página**: Abra o arquivo "index.html" em seu navegador da web. Você verá a página e, quando ela for carregada, o JavaScript chamará a função `exibirAlerta`, que, por sua vez, abrirá uma caixa de diálogo de alerta com a mensagem especificada.
+
+Resumindo, o comando `alert` é uma função JavaScript que permite exibir mensagens de alerta em uma página da web, informando ao usuário sobre algo importante. Para usá-lo, você precisa incluir o JavaScript em sua página e chamar a função `alert` com a mensagem desejada.
